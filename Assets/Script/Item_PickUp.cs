@@ -21,9 +21,9 @@ public class Item_PickUp : MonoBehaviour, IInteratable {
     {
         foreach(Transform slot in InventorySlots.transform)
         {
-            if (slot.transform.GetChild(0).GetComponent<Image>().sprite.name == "empty_item")
+            if (slot.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite.name == "empty_item")
             {
-                slot.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Inventory/" + displayitem);
+                slot.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Inventory/" + displayitem);
             }
         }
     }

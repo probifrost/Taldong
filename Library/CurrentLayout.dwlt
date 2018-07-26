@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 22
+  controlID: 111
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -400,19 +400,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Resources/Sprites
+    - Assets/Script
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources/Sprites
+  - Assets/Script
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\sos99\Documents\Taldong2nd
+  m_LastProjectPath: C:\Users\sos99\Documents\Taldong
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 5}
-    m_SelectedIDs: 14250000
-    m_LastClickedID: 9492
-    m_ExpandedIDs: 00000000c42400003425000000ca9a3bffffff7f
+    m_SelectedIDs: e8250000
+    m_LastClickedID: 9704
+    m_ExpandedIDs: 00000000c02500004026000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -440,7 +440,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c424000034250000
+    m_ExpandedIDs: 00000000c025000040260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -556,9 +556,9 @@ MonoBehaviour:
     height: 433
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 20260000
-    m_LastClickedID: 9760
-    m_ExpandedIDs: 6c94ffffe8fbffff00000000b4250000e2250000
+    m_SelectedIDs: 00270000
+    m_LastClickedID: 9984
+    m_ExpandedIDs: a6faffff00000000c0260000ee260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -609,7 +609,7 @@ MonoBehaviour:
     height: 433
   m_SceneLighting: 1
   lastFramingTime: 1024.4459814534396
-  m_2DMode: 0
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
@@ -638,18 +638,18 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.21125859, y: -0.6983773, z: 0.22896463, w: 0.64437115}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0.21125859, y: -0.6983773, z: 0.22896463, w: 0.64437115}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
     m_Target: 20.894276
     speed: 2
     m_Value: 20.894276
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
-  m_LastSceneViewRotation: {x: 0.13658816, y: -0.8390052, z: 0.24609005, w: 0.46567553}
+    m_Value: 1
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -755,5 +755,5 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 546
-    width: 1257
+    width: 1254
     height: 256

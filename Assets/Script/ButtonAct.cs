@@ -5,6 +5,8 @@ using UnityEngine;
 public class ButtonAct : MonoBehaviour
 {
     public GameObject Button;
+    public GameObject LeftButton;
+    public GameObject RightButton;
     private BGImage current;
 
 
@@ -18,13 +20,15 @@ public class ButtonAct : MonoBehaviour
     {
         current.CurrentImage += 1;
     }
-    public void lefttClick()
+    public void LeftClick()
     {
         current.CurrentImage -= 1;
     }
-    public void backClick()
+    public void BackClick()
     {
         current.CurrentImage -= 5;
-        Button.gameObject.SetActive(false);
+        Button.SetActive(false);
+        LeftButton.SetActive(true);
+        RightButton.SetActive(true);
     }
 }

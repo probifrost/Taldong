@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ZoomInObj : MonoBehaviour
 {
+    public GameObject LeftButton;
+    public GameObject RightButton;
     public GameObject BackButton;
 
     private BGImage current;
@@ -13,9 +15,11 @@ public class ZoomInObj : MonoBehaviour
     {
         current = GameObject.Find("BackgroundImage").GetComponent<BGImage>();
     }
-    public void ChangeBG()
+    public void ZoomClick()
     {
         current.CurrentImage += 5;
+        LeftButton.SetActive(false);
+        RightButton.SetActive(false);
         BackButton.SetActive(true);
     }
     
