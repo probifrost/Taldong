@@ -188,7 +188,7 @@ Project.Taldong을 진행하는 깃
 
  4. 책장에 많은 책이 꽂혀있음 기존의 상태에는 클릭하면 접근 불가 메세지.
     Alpha_2 를 해결한 상태 + Alpha_3의 줄노트를 소지한 상태에서는 Real-time Rendering 책 선택 가능
-    (Alpha_decoder 문서 참조; Alpha_3을 해독하면 REALTIME 이다)
+    (디렉토리 내 Alpha_decoder  참조; Alpha_3을 해독하면 REALTIME 이다)
     단, 동방에 제목만 같고 다른 책이 두 권 있기 때문에 한 권만 보이도록 하자.
    
     해당 책을 클릭하면 책장에서 꺼내지고, 원래 자리 안쪽에는 건전지가 있도록.
