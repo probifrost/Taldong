@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using UnityEngine
+using UnityEngine;
 
 public class LockNum : MonoBehaviour
 {
@@ -15,5 +15,6 @@ public class LockNum : MonoBehaviour
     public void IncreaseNum()
     {
         current.CurrentValue += 1;
+        Debug.Log(current.CurrentValue);
     }
 } 

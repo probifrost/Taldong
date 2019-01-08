@@ -4,27 +4,39 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class Item_PickUp : MonoBehaviour, IInteratable {
+public class Item_PickUp : MonoBehaviour {
 
     public string displayitem;
     private GameObject InventorySlots;
+    private string[] itemlist = {"BatteryOmega","BatteryAlpha","BatteryRho","BatteryPsi","BatteryKappa","testimage"};
 
-    public void Interact(BGImage currentImage)
+    void Update()
     {
-        Pickup();
+        
     }
     void Start()
     {
         InventorySlots = GameObject.Find("Slots");
+        Pickup();
     }
     void Pickup()
     {
-        foreach(Transform slot in InventorySlots.transform)
+        int id= GetID(displayitem);
+        Debug.Log(InventorySlots);
+        Debug.Log(id);
+        InventorySlots.transform.GetChild(id).GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Inventory/testimage");
+        Debug.Log("Inventory/"+displayitem);      
+        Destroy(this.gameObject);
+    }
+    int GetID(string itemname)
+    {
+        for(int i = 0; i <= itemlist.Length; i++)
         {
-            if (slot.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite.name == "empty_item")
+            if(itemlist[i] == itemname)
             {
-                slot.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Inventory/" + displayitem);
+                return i;
             }
         }
+        return -1;
     }
 }

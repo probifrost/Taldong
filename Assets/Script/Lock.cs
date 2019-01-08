@@ -19,7 +19,7 @@ public class Lock : MonoBehaviour
         }
         set
         {
-            if (value == 10)
+            if (currentValue == 10)
             {
                 currentValue = 0;
             }
