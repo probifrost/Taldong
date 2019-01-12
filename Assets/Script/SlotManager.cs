@@ -16,7 +16,7 @@ public class SlotManager : MonoBehaviour {
         var slots = GameObject.Find("Slots");
         foreach(Transform slot in slots.transform)
         {
-            slot.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Inventory/empty_item");
+            slot.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Inventory/empty_item");
         }
     }
 }
