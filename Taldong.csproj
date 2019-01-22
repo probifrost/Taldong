@@ -81,6 +81,7 @@
   <ItemGroup>
     <Compile Include="Assets\Itemlist.cs" />
     <Compile Include="Assets\Script\ActivePopup.cs" />
+    <Compile Include="Assets\Script\BG2.cs" />
     <Compile Include="Assets\Script\BGImage.cs" />
     <Compile Include="Assets\Script\ButtonAct.cs" />
     <Compile Include="Assets\Script\IInteratable.cs" />

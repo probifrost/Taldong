@@ -8,7 +8,7 @@ public class Item_PickUp : MonoBehaviour {
 
     public string displayitem;
     private GameObject InventorySlots;
-    private string[] itemlist = {"BatteryOmega","BatteryAlpha","BatteryRho","BatteryPsi","BatteryKappa","testimage"};
+    //private string[] itemlist = {"BatteryOmega","BatteryAlpha","BatteryRho","BatteryPsi","BatteryKappa","testimage"};
     private Itemlist Aitemlist;
 
     void Update()
@@ -38,14 +38,15 @@ public class Item_PickUp : MonoBehaviour {
     {
         Debug.Log("Start"); //픽업이 시작되는지 로그
         int id= GetID(displayitem); //아이템의 id를 받아옴
+        Debug.Log(id);
 
-        InventorySlots.transform.GetChild(id).GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Inventory/testimage"); //받아온 아이템id를 기준으로 이미지를 변경
+        InventorySlots.transform.GetChild(id).GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Inventory/"+Aitemlist.Allitemlist[id]); //받아온 아이템id를 기준으로 이미지를 변경
         Destroy(this.gameObject); //이 오브젝트를 파괴
     }
 
     int GetID(string itemname)
     {
-        for(int i = 0; i <= itemlist.Length; i++)
+        for(int i = 0; i <= Aitemlist.Allitemlist.Length; i++)
         {
             if(Aitemlist.Allitemlist [i] == itemname)
             {

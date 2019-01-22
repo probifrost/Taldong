@@ -9,18 +9,32 @@ public class ZoomInObj : MonoBehaviour
     public GameObject RightButton;
     public GameObject BackButton;
 
+    public int index;
+
+    private List<int> list = new List<int>() {0, 1, 2, 3, 4};
     private BGImage current;
+    private ButtonAct curval;
 
     void Start()
     {
         current = GameObject.Find("BackgroundImage").GetComponent<BGImage>();
+        curval = GameObject.Find("BackgroundImage").GetComponent<ButtonAct>();
     }
     public void ZoomClick()
     {
-        current.CurrentImage += 5;
+        //배경화면 변경
+        string save = current.pastImage;
+        save += "-" + list[index];
+        current.currentImage = save;
+
+        Debug.Log(current.currentImage); //디버그
+
+        //버튼 액티브 변경
         LeftButton.SetActive(false);
         RightButton.SetActive(false);
         BackButton.SetActive(true);
+
+        
     }
     
 }
