@@ -79,7 +79,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Itemlist.cs" />
+    <Compile Include="Assets\PosterEvent.cs" />
+    <Compile Include="Assets\Script for Room2\CameraMove.cs" />
+    <Compile Include="Assets\Script for Room2\RoomIndexing.cs" />
     <Compile Include="Assets\Script\ActivePopup.cs" />
     <Compile Include="Assets\Script\BG2.cs" />
     <Compile Include="Assets\Script\BGImage.cs" />
@@ -87,6 +89,7 @@
     <Compile Include="Assets\Script\IInteratable.cs" />
     <Compile Include="Assets\Script\Interact.cs" />
     <Compile Include="Assets\Script\Item_PickUp.cs" />
+    <Compile Include="Assets\Script\Itemlist.cs" />
     <Compile Include="Assets\Script\Lock.cs" />
     <Compile Include="Assets\Script\LockNum.cs" />
     <Compile Include="Assets\Script\SlotManager.cs" />

@@ -13,12 +13,10 @@ public class ZoomInObj : MonoBehaviour
 
     private List<int> list = new List<int>() {0, 1, 2, 3, 4};
     private BGImage current;
-    private ButtonAct curval;
 
     void Start()
     {
         current = GameObject.Find("BackgroundImage").GetComponent<BGImage>();
-        curval = GameObject.Find("BackgroundImage").GetComponent<ButtonAct>();
     }
     public void ZoomClick()
     {
