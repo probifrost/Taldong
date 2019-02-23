@@ -27,7 +27,7 @@ public class Item_PickUp : MonoBehaviour {
             RaycastHit2D hit = Physics2D.Raycast(mousePos2d, Vector2.zero); //hit = mousePos2d를 가리킴
             if (hit.collider != null &&
                 !(hit.transform.parent.Equals(slots)) &&
-                hit.collider.gameObject.layer < 8) //만약 hit 위치에 collider가 있고, 부모가 인벤토리가 아니며, 레이어가 8이 아닌 물체
+                hit.collider.gameObject.layer < 8) //만약 hit 위치에 collider가 있고, 부모가 인벤토리가 아니며, 레이어가 default인 물체
             {
                 Debug.Log(hit.collider.gameObject.name); //디버그를 띄우고
                 Pickup(hit.collider.gameObject); //픽업을 실행
