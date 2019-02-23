@@ -5,7 +5,7 @@ using UnityEngine;
 public class Itemlist : MonoBehaviour {
 
 
-    public string[] Allitemlist = { };
+    public static string[] Allitemlist = { "Omega", "Rho", "Psi", "Alpha", "Kappa", "testimage", "testimage", "testimage", "testimage", "testimage", "testimage", "testimage" };
     // {"BatteryOmega","BatteryAlpha","BatteryRho","BatteryPsi","BatteryKappa","testimage"};
 
 }

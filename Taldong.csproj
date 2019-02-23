@@ -79,11 +79,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ExitAction.cs" />
     <Compile Include="Assets\PosterEvent.cs" />
     <Compile Include="Assets\Script for Room2\CameraMove.cs" />
     <Compile Include="Assets\Script for Room2\RoomIndexing.cs" />
     <Compile Include="Assets\Script\ActivePopup.cs" />
-    <Compile Include="Assets\Script\BG2.cs" />
     <Compile Include="Assets\Script\BGImage.cs" />
     <Compile Include="Assets\Script\ButtonAct.cs" />
     <Compile Include="Assets\Script\IInteratable.cs" />
@@ -94,6 +94,7 @@
     <Compile Include="Assets\Script\LockNum.cs" />
     <Compile Include="Assets\Script\SlotManager.cs" />
     <Compile Include="Assets\Script\ZoomInObj.cs" />
+    <Compile Include="Assets\flagScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Sprites\Alpha\Alpha decoder.txt" />

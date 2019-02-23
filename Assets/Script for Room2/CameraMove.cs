@@ -19,7 +19,7 @@ public class CameraMove : MonoBehaviour {
 	}
     public void CameraRight()
     {
-        if(transform.position.x != 45)
+        if(transform.position.x < 45)
         {
             transform.position += Vector3.right * 15;
         }
@@ -31,9 +31,9 @@ public class CameraMove : MonoBehaviour {
     }
     public void CameraLeft()
     {
-        if (transform.position.x != 0)
+        if (transform.position.x > 0)
         {
-            transform.position += Vector3.right * 15;
+            transform.position += Vector3.left * 15;
         }
         else
         {
